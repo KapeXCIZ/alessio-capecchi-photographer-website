@@ -9,9 +9,14 @@ module.exports = {
       padding: '2.5rem',
     },
     extend: {
+      fontSize:{
+        primary: "4rem",
+        secondary: "3rem",
+        tertiary: "2rem",
+      },
       colors:{
         background: "#171717",
-        hover: "#202020",
+        hover: "#30303073",
         primary: "#e9e9e9"
       
       }
