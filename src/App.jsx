@@ -1,20 +1,20 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom';
-import CapturedEmotionsPage from './pages/CapturedEmotionsPage';
-import SpeedTrackPage from './pages/SpeedTrackPage';
 import HomePage from './pages/HomePage';
 import Layout from './pages/Layout';
 import NotFoundPage from './pages/NotFoundPage';
-
-
+import PhotosPage from './pages/PhotosPage';
+import Mugello2024Page from './pages/Mugello2024Page';
 
 const App = () => {
     return (
         <Layout>
             <Routes>
                 <Route path='/' element={<HomePage />} />
-                <Route path='/captured-emotions' element={<CapturedEmotionsPage />} />
-                <Route path='/speed-track' element={<SpeedTrackPage />} />
+                <Route path='/photos' >
+                    <Route path='' element={<PhotosPage />} />
+                    <Route path='mugello2024' element={<Mugello2024Page />} />
+                </Route>
                 <Route path='/*' element={<NotFoundPage />} />
             </Routes>
         </Layout>

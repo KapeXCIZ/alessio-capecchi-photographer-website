@@ -9,17 +9,20 @@ module.exports = {
       padding: '2.5rem',
     },
     extend: {
-      fontSize:{
-        primary: "4rem",
-        secondary: "3rem",
-        tertiary: "2rem",
+      fontSize: {
+        primary: "5rem",
+        secondary: "4rem",
+        tertiary: "3rem",
       },
-      colors:{
+      colors: {
         background: "#171717",
         hover: "#30303073",
-        primary: "#e9e9e9"
-      
-      }
+        primary: "#e9e9e9",
+        loading: "#171717",
+      },
+      maxWidth: {
+        "maxx": "1100px",
+      },
     },
   },
   plugins: [],

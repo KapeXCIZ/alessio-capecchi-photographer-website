@@ -19,7 +19,7 @@ export default function SectionButton({ children, link, scrollToSection }) {
             onClick={scrollToSection}
             className="w-max mx-auto flex flex-col justify-center items-center gap-0"
         >
-            <h1 className="text-secondary sm:text-primary  leading-tight tracking-tighter serif relative">
+            <h1 className="text-tertiary sm:text-secondary  leading-tight tracking-tighter serif relative">
                 {children}
             </h1>
             <motion.div

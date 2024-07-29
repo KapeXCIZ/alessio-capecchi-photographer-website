@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import SectionButton from "./SectionButton";
+import Reveal from "./Reveal";
 
 export default function Section({ children, sectionName, className }) {
     const sectionRef = useRef(null)
@@ -12,7 +13,7 @@ export default function Section({ children, sectionName, className }) {
     }
 
     return (
-        <>
+        <Reveal width="100%">
             <div ref={sectionRef}></div>
             <SectionButton link={sectionLink} scrollToSection={scrollToSection}>
                 {sectionName}
@@ -20,6 +21,6 @@ export default function Section({ children, sectionName, className }) {
             <section className={`mb-40 ${className}`} >
                 {children}
             </section>
-        </>
+        </Reveal>
     )
 }
