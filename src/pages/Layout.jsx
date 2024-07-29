@@ -3,7 +3,6 @@ import Footer from "../components/common/Footer";
 import Navbar from "../components/common/Navbar";
 import React, { useEffect, useRef, useState } from 'react'
 import ContactMeSection from "../components/ContactMeSection";
-import Reveal from "../components/Reveal";
 import Loading from "../components/common/Loading";
 
 export default function Layout({ children }) {

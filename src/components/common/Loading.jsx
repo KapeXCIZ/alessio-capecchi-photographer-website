@@ -1,4 +1,4 @@
-import { BounceLoader, CircleLoader, FadeLoader } from "react-spinners";
+import { CircleLoader } from "react-spinners";
 
 export default function Loading() {
     return (

@@ -30,7 +30,7 @@ export default function PhotoGalleryLayout({ imgs, text }) {
                 <Masonry gutter="1rem">
                     {images.map((img, i) => (
                         <>
-                            {i == 1 &&
+                            {i === 1 &&
                                 <Reveal>
                                     <div className="h-max p-2 w-full order-first flex items-center justify-center serif text-tertiary sm:text-secondary" >{text}</div>
                                 </Reveal>
