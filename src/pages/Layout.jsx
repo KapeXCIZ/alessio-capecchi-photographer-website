@@ -56,7 +56,7 @@ export default function Layout({ children }) {
     }, [])
 
     return (
-        <div className="w-[100wdh] overflow-x-hidden">
+        <div className="w-[100wdh] overflow-x-clip">
             <span ref={topRef} />
             <Navbar copyContent={copyContent} />
             {isLoading ? <Loading /> :
