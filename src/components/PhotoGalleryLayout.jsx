@@ -4,13 +4,14 @@ import Reveal from "./Reveal";
 
 export default function PhotoGalleryLayout({ imgs, text }) {
     const [data, setData] = useState({ img: '', i: 0 });
-
     const images = [...imgs];
+    const [isMobile, setIsMobile] = useState(false)
+
+    window.addEventListener('resize', () => { window.innerWidth < 1000 ? setIsMobile(true) : setIsMobile(false) })
 
     const viewImage = (img, i) => {
         setData({ img, i });
     }
-
 
     const closeImage = () => {
         setData({ img: '', i: 0 });
@@ -38,7 +39,7 @@ export default function PhotoGalleryLayout({ imgs, text }) {
                             <Reveal>
 
                                 <img
-                                    className=" rounded-lg cursor-pointer saturate-50 hover:saturate-100 transition duration-300 select-none"
+                                    className={`rounded-lg cursor-pointer  transition duration-300 select-none ${isMobile ? "saturate-100" : "saturate-50 hover:saturate-100"}`}
                                     key={i}
                                     src={`${process.env.PUBLIC_URL}/images/` + img}
                                     alt=""

@@ -27,9 +27,15 @@ function HiddenMainHeaderComponent({ isHovered }) {
 export default function MainHeader() {
     const [isHovered, setIsHovered] = useState(false)
     const navigate = useNavigate()
+    const [isMobile, setIsMobile] = useState(false)
+
+
+
+
+    window.addEventListener('resize', () => { window.innerWidth < 1000 ? setIsMobile(true) : setIsMobile(false) })
 
     function handleClick() {
-        navigate("photos")
+        navigate("gallery")
     }
 
     return (
@@ -43,7 +49,7 @@ export default function MainHeader() {
                         className='cursor-pointer' onClick={handleClick}
                     >
                         <img src={`${process.env.PUBLIC_URL}/images/mugello2024/_DSC3135-2.webp`} alt="" className='w-full h-full  object-cover hover:scale-110 ease-out transition duration-300 z-20 hover:-z-20' />
-                        <HiddenMainHeaderComponent isHovered={isHovered} />
+                        <HiddenMainHeaderComponent isHovered={isHovered || isMobile} />
                     </motion.span>
                 </SmallerContainer>
             </div>

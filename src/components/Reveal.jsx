@@ -10,6 +10,7 @@ export default function Reveal({ children, width = "fit-content", className }) {
 
     return (
         <span
+
             ref={ref}
             style={{ position: "", width, overflow: "hidden" }} className={className}>
             <motion.div
