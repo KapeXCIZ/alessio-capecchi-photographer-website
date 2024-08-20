@@ -69,7 +69,7 @@ export default function Layout({ children }) {
                 </>
             }
             <Footer />
-            <a href="#top" onClick={scrollToTop} className={`w-10 fixed bottom-12 right-12  shadow-md z-40  ${isVisible ? '' : 'hidden'}`}><ArrowUp size={32} color="white" className="rounded-md bg-transparent size-full p-1 backdrop-blur-md border border-dashed hover:bg-hover duration-100 ease-out " /></a>
+            <a href="#top" onClick={scrollToTop} className={`w-10 fixed bottom-12 right-12  shadow-md z-40   ${isVisible ? '' : 'hidden'}`}><ArrowUp size={32} color="white" className="rounded-md bg-transparent size-full p-1 backdrop-blur-md border border-dashed hover:bg-hover duration-100 ease-out " /></a>
         </div>
     )
 }
