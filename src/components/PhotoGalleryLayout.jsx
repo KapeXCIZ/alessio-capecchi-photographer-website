@@ -5,7 +5,7 @@ import Reveal from "./Reveal";
 export default function PhotoGalleryLayout({ imgs, text }) {
     const [data, setData] = useState({ img: '', i: 0 });
     const images = [...imgs];
-    const [isMobile, setIsMobile] = useState(false)
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 1000)
 
     window.addEventListener('resize', () => { window.innerWidth < 1000 ? setIsMobile(true) : setIsMobile(false) })
 

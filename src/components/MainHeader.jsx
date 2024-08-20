@@ -27,7 +27,7 @@ function HiddenMainHeaderComponent({ isHovered }) {
 export default function MainHeader() {
     const [isHovered, setIsHovered] = useState(false)
     const navigate = useNavigate()
-    const [isMobile, setIsMobile] = useState(false)
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 1000)
 
 
 

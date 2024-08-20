@@ -100,7 +100,7 @@ export default function PhotosCard({ imageUrlCenter, imageUrlLeft, imageUrlRight
                     id="card-left"
                     style={{ backgroundImage: `url(${imageUrlLeft})`, backgroundPosition: "center", backgroundSize: "cover" }}
 
-                    className=" size-9/12 bg-black -z-10 absolute bottom-0 right-0 rounded-lg pointer-events-none"
+                    className=" size-9/12 -z-10 absolute bottom-0 right-0 rounded-lg pointer-events-none"
                 />
                 <motion.div
                     variants={cardVariantsRight}
@@ -110,7 +110,7 @@ export default function PhotosCard({ imageUrlCenter, imageUrlLeft, imageUrlRight
                     id="card-right"
                     style={{ backgroundImage: `url(${imageUrlRight})`, backgroundPosition: "center", backgroundSize: "cover" }}
 
-                    className="size-9/12 bg-red-500  -z-10 absolute top-0 left-0 rounded-lg pointer-events-none "
+                    className="size-9/12 -z-10 absolute top-0 left-0 rounded-lg pointer-events-none "
                 />
             </motion.div>
         </>
