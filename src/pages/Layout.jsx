@@ -28,7 +28,7 @@ export default function Layout({ children }) {
 
     const copyContent = async () => {
         try {
-            await navigator.clipboard.writeText("alessio.capecchi.18@gmail.com");
+            await navigator.clipboard.writeText("alessiocapecchiphoto@gmail.com");
             console.log('Content copied to clipboard');
         } catch (err) {
             console.error('Failed to copy: ', err);
