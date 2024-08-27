@@ -17,7 +17,7 @@ export default function ContactMeSection({ copyContent }) {
                         onMouseLeave={() => { setIsHovered(false); setIsClicked(false); }}
                         onClickCapture={() => { setIsClicked(true); setIsHovered(false) }}
                         id="email"
-                        className="hover:cursor-pointer text-lg md:text-[2rem] w-max my-10 border border-dashed px-6 py-5 mx-auto rounded-lg *:hover:scale-95 *:transition *:duration-200 *:ease-in-out serif font-normal transition duration-150"
+                        className="hover:cursor-pointer  text-lg md:text-[2rem] w-max my-10 border border-dashed px-6 py-5 mx-auto rounded-lg *:hover:scale-95 *:transition *:duration-200 *:ease-in-out serif font-normal transition duration-150"
                         onClick={copyContent}
                     >
                         <p >

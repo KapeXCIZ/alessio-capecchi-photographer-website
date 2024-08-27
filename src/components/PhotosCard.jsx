@@ -72,7 +72,7 @@ export default function PhotosCard({ imageUrlCenter, imageUrlLeft, imageUrlRight
                 onMouseLeave={() => setIsHovered(false)}
                 onClick={link}
                 style={{ backgroundImage: `url(${imageUrlCenter})`, backgroundPosition: "center", backgroundSize: "cover" }}
-                className="flex md:h-[500px] max-w-[800px] h-[70vh]  rounded-lg cursor-pointer mx-auto flex-col  justify-center items-center gap-4 mt-20 bg-cover bg-center bg-no-repeat relative "
+                className="flex md:h-[500px] max-w-[800px] h-[60svh]  rounded-lg cursor-pointer mx-auto flex-col  justify-center items-center gap-4 mt-10 md:mt-20 bg-cover bg-center bg-no-repeat relative "
             >
 
                 <h1 className={`absolute text-[8vw] sm:text-tertiary md:text-secondary lg:text-primary serif shadow-md flex flex-row items-center ${position === "top" ? "top-6" : "bottom-6"}`}>
