@@ -13,12 +13,12 @@ export default function Section({ children, sectionName, className }) {
     }
 
     return (
-        <Reveal width="100%">
+        <Reveal className={""} width="100%">
             <div ref={sectionRef}></div>
             <SectionButton link={sectionLink} scrollToSection={scrollToSection}>
                 {sectionName}
             </SectionButton>
-            <section className={`mb-40 ${className}`} >
+            <section className={`mb-40  ${className}`} >
                 {children}
             </section>
         </Reveal>

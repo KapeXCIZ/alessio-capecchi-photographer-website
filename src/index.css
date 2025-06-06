@@ -68,3 +68,14 @@ body {
     padding-right: 2.5rem;
   }
 }
+
+.fade-edge-mask {
+  mask-image:
+    linear-gradient(to top, transparent 0%, black 15%, black 85%, transparent 100%),
+    linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%);
+  -webkit-mask-image:
+    linear-gradient(to top, transparent 0%, black 15%, black 85%, transparent 100%),
+    linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%);
+  mask-composite: intersect;
+  -webkit-mask-composite: source-in;
+}
