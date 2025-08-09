@@ -21,7 +21,7 @@ export default function ContactMeSection({ copyContent }) {
                         onClick={copyContent}
                     >
                         <p >
-                            alessiocapecchiphoto@gmail.com
+                            alessio.capecchi.18@gmail.com
                         </p>
                     </motion.button>
                 </Reveal>
