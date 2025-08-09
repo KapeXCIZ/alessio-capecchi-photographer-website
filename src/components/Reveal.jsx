@@ -12,7 +12,7 @@ export default function Reveal({ children, width = "fit-content", className }) {
         <span
 
             ref={ref}
-            style={{ position: "", width, overflow: "hidden" }} className={className}>
+            style={{ position: "", width, overflow: "visible" }} className={className}>
             <motion.div
                 variants={
                     {
