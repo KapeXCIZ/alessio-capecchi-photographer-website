@@ -13,9 +13,9 @@ export default function AboutSection() {
                         <img
                             src={`${process.env.PUBLIC_URL}/images/ImmagineProfiloOttimizzataNoBg.png`}
                             alt=""
-                            className=" rounded-lg max-h-[400px] sm:min-h-[600px] sm:max-h-full scale-100 sm:scale-100 object-cover saturate-0 hover:saturate-100 ease-in-out transition duration-300 flex justify-center items-center"
+                            className=" rounded-lg max-h-[400px] sm:min-h-[600px] sm:max-h-full scale-100 sm:scale-100 object-cover saturate-0 hover:saturate-100 ease-in-out transition duration-300 flex justify-center items-center hover:mix-blend-normal mix-blend-hard-light"
                         />
-                        <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-red-400/30 -z-10 md:size-96 size-64  rounded-full blur-2xl overflow-visible" />
+                        <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-2/3 bg-red-500/30 -z-10 md:size-96 size-64  rounded-full blur-2xl overflow-visible" />
                     </Reveal>
                     <span className=" h-full flex flex-col py-6 justify-between text-xl gap-4">
                         <Reveal>
