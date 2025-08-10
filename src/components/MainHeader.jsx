@@ -48,7 +48,7 @@ export default function MainHeader() {
                         onMouseLeave={() => setIsHovered(false)}
                         className='cursor-pointer' onClick={handleClick}
                     >
-                        <img src={`${process.env.PUBLIC_URL}/images/mugello2024/_DSC3135-2.webp`} alt="" className='w-full h-full  object-cover hover:scale-110 ease-out transition duration-300 z-20 hover:-z-20' />
+                        <img src={`${process.env.PUBLIC_URL}/images/mugello2024/_DSC3135-2.webp`} alt="Panorama Mugello 2024 - Alessio Capecchi Photographer" className='w-full h-full  object-cover hover:scale-110 ease-out transition duration-300 z-20 hover:-z-20' />
                         <HiddenMainHeaderComponent isHovered={isHovered || isMobile} />
                     </motion.span>
                 </SmallerContainer>

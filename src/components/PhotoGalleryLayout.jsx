@@ -24,7 +24,7 @@ export default function PhotoGalleryLayout({ imgs, text }) {
                     className="w-full h-[calc(100vh-3.5rem)] bg-transparent backdrop-blur-sm fixed top-14 left-0 flex justify-center items-center overflow-hidden z-50  rounded-xl"
                     onClick={closeImage}
                 >
-                    <img src={`${process.env.PUBLIC_URL}/images/` + data.img} className="max-h-[90%] max-w-[90%]  select-none" alt="" />
+                    <img src={`${process.env.PUBLIC_URL}/images/` + data.img} className="max-h-[90%] max-w-[90%]  select-none" alt={data.img ? `Foto ${data.img.replace(/_/g, ' ').replace(/\.[^/.]+$/, '')} - Alessio Capecchi Photographer` : 'Galleria fotografica Alessio Capecchi'} />
                 </div>
             )}
             <ResponsiveMasonry className="mb-24" columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
@@ -42,7 +42,7 @@ export default function PhotoGalleryLayout({ imgs, text }) {
                                     className={`rounded-lg cursor-pointer  transition duration-300 select-none ${isMobile ? "saturate-100" : "saturate-50 hover:saturate-100"}`}
                                     key={i}
                                     src={`${process.env.PUBLIC_URL}/images/` + img}
-                                    alt=""
+                                    alt={`Foto ${img.replace(/_/g, ' ').replace(/\.[^/.]+$/, '')} - Alessio Capecchi Photographer`}
                                     onClick={() => viewImage(img, i)}
                                 />
                             </Reveal>
